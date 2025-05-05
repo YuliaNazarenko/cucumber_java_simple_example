@@ -31,3 +31,16 @@ Feature: Calculator
     Given I opened a calculator
     When I multiply 2 and -7
     Then the result should be -14
+
+  Scenario: Dividing
+  Тест на проверку деления чисел
+    Given I opened a calculator
+    When I divide 10 and 2
+    Then the result should be 5
+    And print string "result"
+
+  Scenario: Dividing null
+  Тест на проверку деления на 0
+    Given I opened a calculator
+    When I divide 10 and 0
+    Then the result should be NaN
