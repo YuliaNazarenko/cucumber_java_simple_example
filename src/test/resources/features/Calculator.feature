@@ -14,10 +14,10 @@ Feature: Calculator
     When I add 2 and -2
     Then the result should be 0
 
-  Scenario: Substraction
+  Scenario: Subtraction
   Тест на проверку вычитания
     Given I opened a calculator
-    When from 2 I substract 2
+    When from 2 I subtract 2
     Then the result should be 0
 
   Scenario: Multiply
@@ -35,12 +35,12 @@ Feature: Calculator
   Scenario: Dividing
   Тест на проверку деления чисел
     Given I opened a calculator
-    When I divide 10 and 2
+    When I divide 10 by 2
     Then the result should be 5
     And print string "result"
 
   Scenario: Dividing null
   Тест на проверку деления на 0
     Given I opened a calculator
-    When I divide 10 and 0
+    When I divide 10 by 0
     Then the result should be NaN

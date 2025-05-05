@@ -32,7 +32,7 @@ public class CalculatorSteps {
         factResult = calculator.multiply(num1, num2);
     }
 
-    @When ("I divide {double} and {double}")
+    @When ("I divide {double} by {double}")
     public void iDivideAnd(double num1, double num2){
         factResult = calculator.divide(num1, num2);
     }
@@ -41,7 +41,6 @@ public class CalculatorSteps {
     public void printString(String value) {
 
         System.out.println(value);
-
     }
 
 
@@ -51,6 +50,4 @@ public class CalculatorSteps {
         factResult = calculator.subtract(num1, num2);
 
     }
-
-
 }
