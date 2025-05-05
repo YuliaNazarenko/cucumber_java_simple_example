@@ -55,4 +55,4 @@ Feature: Calculator
   Тест на проверку деления на 0
     Given I opened a calculator
     When I divide 10 by 0
-    Then the result should be NaN
+    Then the result should be "NaN"

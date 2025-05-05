@@ -17,6 +17,11 @@ public class CalculatorSteps {
         Assert.assertEquals(result, factResult, 0.0);
     }
 
+    @Then("the result should be {string}")
+    public void the_result_should_be(String string) {
+        throw new io.cucumber.java.PendingException();
+    }
+
     @Given("I opened a calculator")
     public void i_opened_a_calculator() {
         calculator = new Calculator();
@@ -35,6 +40,7 @@ public class CalculatorSteps {
     @When ("I divide {double} by {double}")
     public void iDivideAnd(double num1, double num2){
         factResult = calculator.divide(num1, num2);
+        System.out.println("factResult = " + factResult);
     }
 
     @And("print string {string}")
@@ -43,11 +49,9 @@ public class CalculatorSteps {
         System.out.println(value);
     }
 
-
-    @When("from {int} I substract {int}")
-    public void fromISubstract(int num1, int num2) {
+    @When("from {int} I subtract {int}")
+    public void fromISubtract(int num1, int num2) {
 
         factResult = calculator.subtract(num1, num2);
-
     }
 }
